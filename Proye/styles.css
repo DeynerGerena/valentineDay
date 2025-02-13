@@ -221,17 +221,7 @@ body {
     text-shadow: 4px white;
 }
 /*Footer*/
-.footer {
-    width: 100%;
-    background-color: black;
-    color: white;
-    text-align: center;
-    padding: 15px 0;
-    font-size: 18px;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-}
+
 
 /* responsive*/
 @media (max-width: 768px) {
