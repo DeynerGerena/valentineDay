@@ -4,6 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Lobster&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Lobster&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
 
+
 body {
     background: #fdfdfd;
     margin: 0;
@@ -221,7 +222,14 @@ body {
     text-shadow: 4px white;
 }
 /*Footer*/
-
+.footer {
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 18px;
+}
 
 /* responsive*/
 @media (max-width: 768px) {
