@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@700&family=Special+Elite&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Lobster&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+body {
+    background: #fdfdfd;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 100vw;
+    height: 90vh;
+    background: white;
+    padding: 5px;
+    text-align: center;
+}
+
+/* Sección 1: Recuadros superiores */
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 5px;
+    border-bottom: 5px solid black;
+    margin-bottom: 5px;
+}
+
+.box {
+    font-family: Impact, sans-serif;
+    width: 50%;
+    margin: 1%;
+    border: 3px solid black;
+    font-size: 20px;
+    font-weight: 100;
+    border-bottom: 20px solid black;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+.box:hover {
+    box-shadow: inset 2px 2px 6px rgba(0, 0, 0, 0.6), 
+                inset -2px -2px 6px rgba(255, 255, 255, 0.2);
+}
+
+/* Sección 2: Encabezado del periódico */
+.newspaper-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+    padding: 5px;
+    color: white;
+    border-top: 5px solid black;
+    border-bottom: 5px solid black; 
+}
+
+.side-text {
+    font-family: "Alfa Slab One", serif;
+    font-size: 4vw;
+    text-shadow: 5px 5px black;
+    display: inline-block;
+    width: 42%;
+    background-color: red;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+.side-text:hover{
+    box-shadow: 0px 10px 5px rgba(0, 0, 0, 0.2);
+}
+
+.logo img {
+    width: 190px;
+    background-color: none;
+    border-radius: 10px;
+}
+
+/* Sección 3: Contenido principal */
+.main-content{
+    padding: 10px;
+    margin-top: 10px;
+    border: 3px solid red;
+}
+.headline{
+    display: flex;
+    flex-direction: column; /* Apila los elementos en vertical */
+    text-align: left; /* Alinea el texto a la izquierda */
+    margin-left: 50px;
+    margin-top: 10px;
+}
+.headline p, .headline span {
+    line-height: 1; /* Reduce el interlineado */
+    margin: 0; /* Asegura que no haya márgenes extra */
+}
+
+.head-one{
+    font-family: "Lobster", serif;
+    font-size: 20px;
+    font-weight: 300;
+}
+.head-tow{
+    font-family: "Roboto Mono", serif;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.valentine {
+    font-family: "Roboto Mono", serif;
+    color: red;
+    font-size: 100px;
+    font-weight: bold;
+}
+
+/* Caja que contiene la imagen y el texto */
+.content-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.imga-text{
+    font-family: "Roboto Mono", serif;
+    font-weight: 900;
+    font-size: 20px;
+    margin-left: 50px;    
+}
+.image-content{
+    width: 45%;    
+}
+
+.image img {
+    margin-left: 50px;
+    border: 3px solid black;
+}
+
+.text-box {
+    width: 45%;
+    text-align: center;
+}
+.text {
+    font-size: 35px;
+    margin-left: 10px;
+    padding: 10px;
+}
+
+/* Asegurar que el botón esté centrado */
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.valentine-btn {
+    background: red;
+    color: white;
+    border: none;
+    text-shadow: 2px 2px black;
+    padding: 12px 20px;
+    font-family: "Alfa Slab One", serif;
+    font-size: 24px;
+    cursor: pointer;
+    font-weight: 100;
+    text-align: center;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+.valentine-btn:hover{
+    box-shadow: inset 2px 2px 6px rgba(0, 0, 0, 0.8), 
+                inset -2px -2px 6px rgba(255, 255, 255, 0.4);
+}
+
+
+/* Sección 4: Boletos */
+.tickets {
+    display: flex;
+    justify-content: space-between; /* Espacio uniforme entre tickets */
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-top: 5px solid black;
+    margin-top: 20px;
+    border-bottom: 5px solid black;
+    margin-bottom: 20px;
+}
+
+.ticket {
+    position: relative;
+    flex: 1; /* Cada ticket ocupa el mismo ancho */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ticket img {
+    width: 90%; /* Ocupará el 100% del contenedor sin sobrepasar */
+    height: auto;
+    display: block;
+}
+.ticket p {
+    position: absolute;
+    font-family: Impact, sans-serif;
+    font-weight: 200;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    font-size: 18px;
+    background: none; /* Fondo blanco con transparencia */
+    text-align: center;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+.ticket p:hover{
+    text-shadow: 4px white;
+}
+/*Footer*/
+.footer {
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 18px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+/* responsive*/
+@media (max-width: 768px) {
+    .headline {
+        margin-left: 10px; /* Reduce el margen en pantallas pequeñas */
+        text-align: center; /* Centra el texto */
+    }
+
+    .valentine {
+        font-size: 60px; /* Reduce el tamaño del texto */
+    }
+
+    .content-box {
+        flex-direction: column; /* Cambia la disposición de lado a lado a vertical */
+        align-items: center;
+        text-align: center;
+    }
+
+    .image-content {
+        width: 100%; /* Ocupa todo el ancho en pantallas pequeñas */
+        text-align: center;
+    }
+
+    .image img {
+        margin-left: 0; /* Elimina el margen izquierdo */
+        width: 80%; /* Ajusta el tamaño de la imagen */
+    }
+
+    .text-box {
+        width: 90%; /* Ajusta el tamaño del cuadro de texto */
+        text-align: center;
+    }
+
+    .text {
+        font-size: 18px; /* Reduce el tamaño de la fuente para mejorar la legibilidad */
+        padding: 5px;
+    }
+
+    .valentine-btn {
+        font-size: 18px; /* Reduce el tamaño del botón */
+        padding: 10px;
+    }
+
+    .tickets {
+        flex-direction: column; /* Hace que los boletos se apilen en pantallas pequeñas */
+        gap: 20px;
+    }
+
+    .ticket img {
+        width: 100%; /* Hace que las imágenes de los boletos ocupen el ancho completo */
+    }
+}
+
+
